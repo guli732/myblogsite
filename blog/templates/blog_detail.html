@@ -24,7 +24,7 @@
                     <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span>：{{ blog.created_time|date:"Y-m-d H:m:s" }}</li>
                 </ul>
                 <div class="blog-content">
-                    {{ blog.content }}
+                    {{ blog.content|safe }}
                 </div>
                 <div class="blog-more">
                     <p>上一篇：

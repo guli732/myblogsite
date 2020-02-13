@@ -22,9 +22,6 @@ ul.blog-info-description {
 ul.blog-info-description li {
     display: inline-block;
 }
-div.blog-content {
-    text-indent: 2em;
-}
 div.blog-more {
     margin-top: 1em;
 }
