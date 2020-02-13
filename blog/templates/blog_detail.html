@@ -11,6 +11,9 @@
 
 {% block header_extends %}
     <link rel="stylesheet" href="{% static 'blog/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/googlecode.css' %}">
+    <script type="text/javascript" src="{% static 'blog/highlight.pack.js' %}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 {% endblock %}
 
 {% block content %}
