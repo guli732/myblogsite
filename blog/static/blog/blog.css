@@ -28,3 +28,9 @@ div.blog-content {
 div.blog-more {
     margin-top: 1em;
 }
+ul.blog-list li {
+    margin-top: 0.2em;
+}
+ul.date-list li {
+    margin-top: 0.2em;
+}
