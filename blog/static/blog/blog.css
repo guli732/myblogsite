@@ -21,6 +21,7 @@ ul.blog-info-description {
 }
 ul.blog-info-description li {
     display: inline-block;
+    margin-right: 1em;
 }
 div.blog-more {
     margin-top: 1em;
@@ -30,4 +31,8 @@ ul.blog-list li {
 }
 ul.date-list li {
     margin-top: 0.2em;
+}
+ul.blog-info li {
+    display: inline-block;
+    margin-right: 1em;
 }

@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
     'ckeditor',
-    'ckeditor_uploader'
+    'ckeditor_uploader',
+    'blog',
+    'read_statistics',
 ]
 
 MIDDLEWARE = [
@@ -139,8 +140,8 @@ EACH_PAGE_BLOGS_NUMBER = 5
 
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': (['div', 'Source', '-', 'Save', 'NewPage', 'Preview', '-', 'Templates'],
-                    ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Print', 'SpellChecker', 'Scayt'],
+        'toolbar': (['div', 'Source', '-', 'Preview', '-', 'Templates'],
+                    ['Cut', 'Copy', 'Paste', '-', 'Print'],
                     ['Undo', 'Redo', '-', 'Find', 'Replace', '-', 'SelectAll', 'RemoveFormat', '-', 'Maximize',
                     'ShowBlocks', '-', 'Subscript', 'Superscript', "CodeSnippet"],  # 添加"CodeSnippet"到toolbar中
                     ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton',
