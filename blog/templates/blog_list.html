@@ -96,7 +96,7 @@
                             {% for blog_type in blog_types %}
                                 <li>
                                     <a href="{% url 'blogs_with_type' blog_type.pk %}">
-                                        <span class="badge">{{ blog_type.type_name }}({{ blog_type.blog_count }})</span>
+                                        <span class="badge">{{ blog_type.type_name }} ({{ blog_type.blog_count }})</span>
                                     </a>
                                 </li>
                             {% empty %}
@@ -114,7 +114,7 @@
                             {% for blog_date, blog_count in blog_dates.items %}
                                 <li>
                                     <a href="{% url 'blogs_with_date' blog_date.year blog_date.month %}">
-                                        <span class="badge">{{ blog_date|date:"Y年m月" }}({{ blog_count }})</span>
+                                        <span class="badge">{{ blog_date|date:"Y年m月" }} ({{ blog_count }})</span>
                                     </a>
                                 </li>
                             {% endfor %}
