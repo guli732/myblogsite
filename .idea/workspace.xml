@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3b4a30a5-0d4f-42bf-9d53-2d9430aedd90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblogsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblogsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblogsite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblogsite/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +118,8 @@
       <workItem from="1581644924035" duration="10990000" />
       <workItem from="1581656377008" duration="4638000" />
       <workItem from="1581671454683" duration="7229000" />
-      <workItem from="1581733712196" duration="10212000" />
+      <workItem from="1581733712196" duration="12683000" />
+      <workItem from="1581764946684" duration="382000" />
     </task>
     <task id="LOCAL-00001" summary="添加按月分类功能">
       <created>1581503298936</created>
@@ -167,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581741266468</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加python相关库列表文件">
+      <created>1581755362881</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581755362882</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +191,8 @@
     <MESSAGE value="微调页面布局" />
     <MESSAGE value="阅读计数和首页图表显示" />
     <MESSAGE value="热门博客排行以及缓存提速" />
-    <option name="LAST_COMMIT_MESSAGE" value="热门博客排行以及缓存提速" />
+    <MESSAGE value="添加python相关库列表文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加python相关库列表文件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580530097176">
@@ -196,10 +207,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="476" y="18" key="#myblogsite/0.0.1536.824@0.0.1536.824" timestamp="1581567454243" />
-    <state x="372" y="5" width="807" height="814" key="CommitChangelistDialog2" timestamp="1581741264889">
+    <state x="372" y="5" width="807" height="814" key="CommitChangelistDialog2" timestamp="1581755361687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" width="807" height="814" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581741264889" />
+    <state x="372" y="5" width="807" height="814" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581755361687" />
     <state x="114" y="100" key="FileChooserDialogImpl" timestamp="1581567483475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -224,10 +235,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="341" y="67" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581567601075" />
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581755296562">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="328" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581764997171">
+      <screen x="0" y="0" width="896" height="824" />
     </state>
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1581755296562" />
+    <state x="328" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.896.824@0.0.896.824" timestamp="1581764997171" />
     <state x="449" y="270" width="715" height="305" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581304907339">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
