@@ -16,6 +16,7 @@
 
 {% block content %}
     <h3 class="home-content">欢迎访问我的网站</h3>
+    <!--图表-->
     <div id="container">
         <script>
         // 图表配置
@@ -23,6 +24,7 @@
             chart: { type: 'line' },
             title: { text: null },
             xAxis: {
+                title: { text: '近7日阅读量变化' },
                 categories: {{ dates|safe }},
             },
             yAxis: {
@@ -37,5 +39,42 @@
         // 图表初始化函数
         var chart = Highcharts.chart('container', options);
     </script>
+    </div>
+    <!--今天的热门博客-->
+    <div class="hot-data">
+        <h3>今日热门点击</h3>
+        <ul>
+            {% for hot_data in today_hot_data %}
+                <li>
+                    <a href="{% url 'blog_detail' hot_data.content_object.pk %}">{{ hot_data.content_object.title }}({{ hot_data.read_num }})</a>
+                </li>
+            {% empty %}
+                <li>今日暂无点击</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="hot-data">
+        <h3>昨日热门点击</h3>
+        <ul>
+            {% for hot_data in yesterday_hot_data %}
+                <li>
+                    <a href="{% url 'blog_detail' hot_data.content_object.pk %}">{{ hot_data.content_object.title }}({{ hot_data.read_num }})</a>
+                </li>
+            {% empty %}
+                <li>昨日暂无点击</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="hot-data">
+        <h3>近7天热门点击</h3>
+        <ul>
+            {% for hot_data in seven_days_hot_data %}
+                <li>
+                    <a href="{% url 'blog_detail' hot_data.id %}">{{ hot_data.title }}({{ hot_data.read_num_sum }})</a>
+                </li>
+            {% empty %}
+                <li>昨日暂无点击</li>
+            {% endfor %}
+        </ul>
     </div>
 {% endblock %}

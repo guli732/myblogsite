@@ -3,6 +3,8 @@ from django.utils import timezone
 from django.db.models import Sum
 from .models import ReadNum, ReadDetail
 import datetime
+from blog.models import Blog
+from django.core.cache import caches
 
 
 def read_statistics_once_read(request, obj):
@@ -32,3 +34,23 @@ def get_seven_days_read_data(content_type):
         read_nums.append(result['read_num_sum'] or 0)
         dates.append(date.strftime('%m/%d'))
     return read_nums, dates
+
+
+def get_today_hot_data(content_type):
+    today = timezone.now().date()
+    read_details = ReadDetail.objects.filter(content_type=content_type, date=today)
+    return read_details.order_by('-read_num')[:7]
+
+
+def get_yesterday_hot_data(content_type):
+    today = timezone.now().date()
+    yesterday = today - datetime.timedelta(days=1)
+    read_details = ReadDetail.objects.filter(content_type=content_type, date=yesterday)
+    return read_details.order_by('-read_num')[:7]
+
+
+def get_seven_hot_blogs():
+    today = timezone.now().date()
+    date = today - datetime.timedelta(days=7)
+    blogs = Blog.objects.filter(read_details__date__lt=today, read_details__date__gte=date).values('id', 'title').annotate(read_num_sum=Sum('read_details__read_num'))
+    return blogs.order_by('-read_num_sum')[:7]

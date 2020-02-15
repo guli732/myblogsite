@@ -138,6 +138,7 @@ CKEDITOR_UPLOAD_PATH = 'upload/'
 # 自定义参数
 EACH_PAGE_BLOGS_NUMBER = 5
 
+# 富文本编辑器插件
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': (['div', 'Source', '-', 'Preview', '-', 'Templates'],
@@ -156,4 +157,12 @@ CKEDITOR_CONFIGS = {
                     ),
         'extraPlugins': 'codesnippet',    # 此处需要添加
         },
+}
+
+# 缓存设置
+CAHCHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'my_cache_table',
+    }
 }
