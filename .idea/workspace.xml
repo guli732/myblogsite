@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b4a30a5-0d4f-42bf-9d53-2d9430aedd90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/animate.css-3.7.2/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblogsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblogsite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblogsite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblogsite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblogsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblogsite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblogsite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblogsite/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,6 +40,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/blog/models.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/blog/views.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1XBcsruJNFDY8TKYVKVLWpp15rb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,17 +54,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/static/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/animate.css-3.7.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\django\myblogsite\blog\static\blog" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\django\myblogsite\blog\static\blog" />
       <recent name="D:\django\myblogsite\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\django\myblogsite\static\animate.css-3.7.2" />
+      <recent name="D:\django\myblogsite\static" />
+      <recent name="D:\django\myblogsite\blog\static\blog" />
     </key>
   </component>
   <component name="RunManager">
@@ -119,7 +128,11 @@
       <workItem from="1581656377008" duration="4638000" />
       <workItem from="1581671454683" duration="7229000" />
       <workItem from="1581733712196" duration="12683000" />
-      <workItem from="1581764946684" duration="382000" />
+      <workItem from="1581764946684" duration="1509000" />
+      <workItem from="1581775368596" duration="842000" />
+      <workItem from="1581827325857" duration="500000" />
+      <workItem from="1581828083510" duration="579000" />
+      <workItem from="1582070701026" duration="3034000" />
     </task>
     <task id="LOCAL-00001" summary="添加按月分类功能">
       <created>1581503298936</created>
@@ -177,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581755362882</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改settings.py">
+      <created>1581765493428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581765493429</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +212,8 @@
     <MESSAGE value="阅读计数和首页图表显示" />
     <MESSAGE value="热门博客排行以及缓存提速" />
     <MESSAGE value="添加python相关库列表文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加python相关库列表文件" />
+    <MESSAGE value="修改settings.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改settings.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580530097176">
@@ -207,38 +228,39 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="476" y="18" key="#myblogsite/0.0.1536.824@0.0.1536.824" timestamp="1581567454243" />
-    <state x="372" y="5" width="807" height="814" key="CommitChangelistDialog2" timestamp="1581755361687">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="217" y="5" width="807" height="814" key="CommitChangelistDialog2" timestamp="1581765492081">
+      <screen x="0" y="0" width="896" height="824" />
     </state>
     <state x="372" y="5" width="807" height="814" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581755361687" />
+    <state x="217" y="5" key="CommitChangelistDialog2/0.0.896.824@0.0.896.824" timestamp="1581765492081" />
     <state x="114" y="100" key="FileChooserDialogImpl" timestamp="1581567483475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="114" y="100" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581567483475" />
-    <state width="1493" height="167" key="GridCell.Tab.0.bottom" timestamp="1581755225776">
+    <state width="1493" height="167" key="GridCell.Tab.0.bottom" timestamp="1582073593344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="167" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581755225776" />
-    <state width="1493" height="167" key="GridCell.Tab.0.center" timestamp="1581755225776">
+    <state width="1493" height="167" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582073593344" />
+    <state width="1493" height="167" key="GridCell.Tab.0.center" timestamp="1582073593344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="167" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581755225776" />
-    <state width="1493" height="167" key="GridCell.Tab.0.left" timestamp="1581755225776">
+    <state width="1493" height="167" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582073593344" />
+    <state width="1493" height="167" key="GridCell.Tab.0.left" timestamp="1582073593344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="167" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581755225776" />
-    <state width="1493" height="167" key="GridCell.Tab.0.right" timestamp="1581755225776">
+    <state width="1493" height="167" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582073593344" />
+    <state width="1493" height="167" key="GridCell.Tab.0.right" timestamp="1582073593344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="167" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581755225776" />
+    <state width="1493" height="167" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582073593344" />
     <state x="341" y="67" key="SettingsEditor" timestamp="1581567601075">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="341" y="67" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581567601075" />
-    <state x="328" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581764997171">
-      <screen x="0" y="0" width="896" height="824" />
+    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582073846135">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1581755296562" />
+    <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1582073846135" />
     <state x="328" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.896.824@0.0.896.824" timestamp="1581764997171" />
     <state x="449" y="270" width="715" height="305" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581304907339">
       <screen x="0" y="0" width="1536" height="824" />
